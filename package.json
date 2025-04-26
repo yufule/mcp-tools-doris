@@ -1,0 +1,48 @@
+{
+  "name": "mcp-tools-doris",
+  "version": "1.0.0",
+  "description": "用于操作Apache Doris的MCP工具，支持通过LLM交互",
+  "main": "src/index.js",
+  "bin": {
+    "doris-cli": "bin/cli.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "jest",
+    "doris": "node bin/cli.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.2",
+    "mysql2": "^3.6.1",
+    "commander": "^11.0.0",
+    "dotenv": "^16.3.1",
+    "chalk": "^4.1.2",
+    "inquirer": "^8.2.5",
+    "ora": "^5.4.1",
+    "table": "^6.8.1"
+  },
+  "devDependencies": {
+    "jest": "^29.6.2"
+  },
+  "keywords": [
+    "doris",
+    "mcp",
+    "database",
+    "olap",
+    "cli",
+    "llm",
+    "modelcontextprotocol"
+  ],
+  "author": "yufule",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yufule/mcp-tools-doris.git"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
