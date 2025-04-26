@@ -1,0 +1,16 @@
+{
+  "tools": [
+    {
+      "name": "doris",
+      "description": "用于操作和管理 Apache Doris 集群的工具",
+      "command": "node",
+      "args": ["src/cli/index.js"],
+      "env": {
+        "DORIS_HOST": "${DORIS_HOST}",
+        "DORIS_PORT": "${DORIS_PORT}",
+        "DORIS_USER": "${DORIS_USER}",
+        "DORIS_PASSWORD": "${DORIS_PASSWORD}"
+      }
+    }
+  ]
+}
