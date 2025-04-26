@@ -1,0 +1,126 @@
+{
+  "tools": [
+    {
+      "name": "doris_query",
+      "description": "执行SQL查询并返回结果",
+      "path": "node_modules/mcp-tools-doris/mcp_tools/doris_query.js",
+      "parameters": [
+        {
+          "name": "sql",
+          "type": "string",
+          "description": "要执行的SQL查询语句"
+        },
+        {
+          "name": "database",
+          "type": "string",
+          "description": "可选: 指定要在哪个数据库上执行查询",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "doris_show_databases",
+      "description": "显示所有数据库",
+      "path": "node_modules/mcp-tools-doris/mcp_tools/doris_show_databases.js",
+      "parameters": []
+    },
+    {
+      "name": "doris_show_tables",
+      "description": "显示指定数据库中的所有表",
+      "path": "node_modules/mcp-tools-doris/mcp_tools/doris_show_tables.js",
+      "parameters": [
+        {
+          "name": "database",
+          "type": "string",
+          "description": "数据库名称"
+        }
+      ]
+    },
+    {
+      "name": "doris_describe_table",
+      "description": "获取表结构信息",
+      "path": "node_modules/mcp-tools-doris/mcp_tools/doris_describe_table.js",
+      "parameters": [
+        {
+          "name": "database",
+          "type": "string",
+          "description": "数据库名称"
+        },
+        {
+          "name": "table",
+          "type": "string",
+          "description": "表名称"
+        }
+      ]
+    },
+    {
+      "name": "doris_cluster_status",
+      "description": "获取Doris集群状态信息",
+      "path": "node_modules/mcp-tools-doris/mcp_tools/doris_cluster_status.js",
+      "parameters": []
+    },
+    {
+      "name": "doris_import_data",
+      "description": "导入数据到Doris表",
+      "path": "node_modules/mcp-tools-doris/mcp_tools/doris_import_data.js",
+      "parameters": [
+        {
+          "name": "file",
+          "type": "string",
+          "description": "要导入的文件路径"
+        },
+        {
+          "name": "database",
+          "type": "string",
+          "description": "目标数据库"
+        },
+        {
+          "name": "table",
+          "type": "string",
+          "description": "目标表"
+        },
+        {
+          "name": "format",
+          "type": "string",
+          "description": "文件格式，例如CSV、JSON等",
+          "required": false
+        },
+        {
+          "name": "separator",
+          "type": "string",
+          "description": "列分隔符，针对CSV格式",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "doris_export_data",
+      "description": "导出查询结果到文件",
+      "path": "node_modules/mcp-tools-doris/mcp_tools/doris_export_data.js",
+      "parameters": [
+        {
+          "name": "sql",
+          "type": "string",
+          "description": "查询SQL"
+        },
+        {
+          "name": "outputFile",
+          "type": "string",
+          "description": "输出文件路径"
+        },
+        {
+          "name": "separator",
+          "type": "string",
+          "description": "列分隔符",
+          "required": false
+        },
+        {
+          "name": "includeHeader",
+          "type": "boolean",
+          "description": "是否包含表头",
+          "required": false
+        }
+      ]
+    }
+  ]
+}
