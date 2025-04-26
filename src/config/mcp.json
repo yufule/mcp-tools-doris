@@ -1,0 +1,15 @@
+{
+  "doris": {
+    "command": "cmd /c npx",
+    "args": [
+      "-y",
+      "mcp-tools-doris"
+    ],
+    "env": {
+      "DORIS_HOST": "${DORIS_HOST}",
+      "DORIS_PORT": "${DORIS_PORT}",
+      "DORIS_USER": "${DORIS_USER}",
+      "DORIS_PASSWORD": "${DORIS_PASSWORD}"
+    }
+  }
+}

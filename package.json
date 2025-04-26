@@ -1,6 +1,6 @@
 {
   "name": "mcp-tools-doris",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "用于操作Apache Doris的MCP工具，支持通过LLM交互",
   "main": "src/index.js",
   "bin": {
