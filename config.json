@@ -1,0 +1,28 @@
+{
+  "doris": {
+    "host": "localhost",
+    "port": 9030,
+    "user": "root",
+    "password": "",
+    "database": "test",
+    "timeout": 30000
+  },
+  "fe": {
+    "host": "localhost",
+    "httpPort": 8030,
+    "queryPort": 9030
+  },
+  "be": {
+    "hosts": [
+      "localhost:9050"
+    ]
+  },
+  "import": {
+    "maxBatchSize": 10000,
+    "timeout": 600000
+  },
+  "export": {
+    "outputDir": "./output",
+    "format": "csv"
+  }
+}
